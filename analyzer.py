@@ -88,7 +88,7 @@ def dfs(reseau, start, visited=None):
 
     for voisin in reseau[start]:  # explore toutes les personnes suivies
         if voisin not in visited:
-            dfs(reseau, voisin, visited)  # appel récursif
+            dfs(reseau, voisin, visited) 
         else: 
             return True
         
