@@ -108,5 +108,27 @@ def cycle_detecte(reseau, start, visited=None, en_cours=None):
    en_cours.remove(start)
    return False
 
+
+def noeud_influent(reseau):
+    # le nœud influent = celui qui a le score le plus élevé
+    # score = nombre de followers + nombre de personnes suivies
+    
+    score_max = -1
+    personne_influente = -1
+    
+    for i in range(len(reseau)):
+        # on calcule la somme des abonnées et abonnements pour la personne i
+        followers = nbr_de_followers(i, reseau)   
+        followings = len(reseau[i])                
+        score = followers + followings
+        
+        # si ce score est meilleur que le maximum actuel, on met à jour
+        if score > score_max:
+            score_max = score
+            personne_influente = i
+    
+    print(f"Le nœud le plus influent est la personne {personne_influente} avec un score de {score_max}")
+    return personne_influente
+
     
 
