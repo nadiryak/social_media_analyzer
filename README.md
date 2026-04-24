@@ -1,6 +1,6 @@
 # 🌐 Social Network Analyzer
 
-> **NOTE:** This project is still in progress. The `influential_node description` is not implemented yet — I'm working on school stuff so u know.
+> **NOTE:** This project is still in progress. The `influential_node ` description is not implemented yet — I'm working on school stuff so u know.
 
 This is a simple social network analyzer written in Python. I built it to practice graph theory concepts from my algorithms course — things like adjacency lists, DFS, and cycle detection.
 
