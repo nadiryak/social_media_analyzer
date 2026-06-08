@@ -1,6 +1,5 @@
 # 🌐 Social Network Analyzer
 
-> **NOTE:** This project is still in progress. The `influential_node ` description is not implemented yet — I'm working on school stuff so u know.
 
 This is a simple social network analyzer written in Python. I built it to practice graph theory concepts from my algorithms course — things like adjacency lists, DFS, and cycle detection.
 
@@ -102,14 +101,14 @@ cycle_detecte(RESEAU, 3)  # → False (person 3 follows nobody)
 
 ---
 
-### 🚧 Influential node — to be implemented  update (implemented)
-this explanation is not complete, i didn't update it after implementing the `noeud_influent()` function
+### 🚧 Influential node — implemented
 
-I will add a function `noeud_influent(reseau)` that finds the most influential person in the network.
 
 My plan: score each person using **followers + followings**. The person with the highest score is the most influential — they are both well followed and well connected.
 
 I already have `nbr_de_followers` and `len(reseau[i])`, so I just need to combine them.
+so we've combined the `nbr_de_followers` and `len(reseau[i])` functions and we've calculated the highest score between them and get the influential person.
+
 
 ---
 
